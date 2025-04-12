@@ -127,7 +127,7 @@ export default function DashboardHome({ username, userById }: Props) {
     <div className="w-full flex flex-col sm:flex-row items-start justify-between gap-4 pt-5">
       <div className="w-full space-y-2">
         <h1 className="text-3xl sm:text-3xl md:text-4xl font-bold leading-snug">
-          Welcome to Talkr, <span className="text-green-600 font-dm-serif">
+          Welcome to Talkr, <span className="text-green-600">
             {username.charAt(0).toUpperCase() + username.slice(1).toLowerCase()}!
           </span>
         </h1>
@@ -209,11 +209,11 @@ export default function DashboardHome({ username, userById }: Props) {
 </AlertDialogFooter>
 
   </AlertDialogContent>
-</AlertDialog>
+          </AlertDialog>
 
 
           {/* Vocabulary Quiz */}
-          <Link href="/app/practice" className="h-auto flex flex-col items-center text-center gap-2 p-6 bg-neutral-800 hover:bg-neutral-700 hover:cursor-pointer">
+          <Link href="/app/practice" className="h-auto flex flex-col items-center text-center gap-2 p-6 bg-neutral-800 rounded-md hover:bg-neutral-700 hover:cursor-pointer">
             <Image 
             src='/assets/icons/chat.svg' 
             width={45} 
