@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Archivo, DM_Serif_Text } from "next/font/google";
 import "./globals.css";
+import {
+  ClerkProvider
+} from '@clerk/nextjs'
 
 const archivo = Archivo({
   variable: "--font-archivo",
@@ -27,9 +30,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${archivo.variable} ${dm.variable} bg-white`}>
+      <ClerkProvider>
+      <body className={`${archivo.variable} ${dm.variable}`}>
         {children}
       </body>
+    </ClerkProvider>
     </html>
   );
 }

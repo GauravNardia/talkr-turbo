@@ -5,7 +5,12 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+      "@repo/validations/*": ["../../packages/lib/validations/*"]
+    }
   },
   "include": [
     "**/*.ts",
@@ -13,7 +18,7 @@
     "next-env.d.ts",
     "next.config.js",
     ".next/types/**/*.ts"
-  ],
+, "postcss.config.js"  ],
   "exclude": [
     "node_modules"
   ]
