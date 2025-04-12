@@ -1,6 +1,6 @@
 {
     "functions": {
-      "apps/web/**/[api|route]/*.js": {
+      "apps/web/**/app/*.js": {
         "includeFiles": [
           "packages/db/node_modules/.prisma/client/**",
           "packages/db/node_modules/@prisma/client/**"
