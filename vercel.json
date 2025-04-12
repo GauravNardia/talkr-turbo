@@ -1,6 +1,6 @@
 {
     "functions": {
-      "apps/web/**/app/*.js": {
+      "apps/web/**/*.js": {
         "includeFiles": [
           "packages/db/node_modules/.prisma/client/**",
           "packages/db/node_modules/@prisma/client/**"
